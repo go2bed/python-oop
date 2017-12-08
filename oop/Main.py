@@ -24,7 +24,5 @@ print(sam.breed)
 sam.set_name('bublik')
 print(sam.get_name())
 
-
-
 book = Book("Python Rocks!", "Jose Portilla", 159)
 print(book)
