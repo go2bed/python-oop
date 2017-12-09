@@ -7,12 +7,14 @@ class Line(object):
         self.coor2 = coor2
 
     def distance(self):
-        return math.sqrt((self.coor2[0] - self.coor1[0]) ** 2
-                         + (self.coor2[1] - self.coor1[1]) ** 2)
+        x1, y1 = self.coor1
+        x2, y2 = self.coor2
+        return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
     def slope(self):
-        return (self.coor2[1] - self.coor1[1]) \
-               / (self.coor2[0] - self.coor1[0])
+        x1, y1 = self.coor1
+        x2, y2 = self.coor2
+        return (y2 - y1) / (x2 - x1)
 
     def __str__(self):
         return self.distance()
