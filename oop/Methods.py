@@ -1,6 +1,10 @@
+import datetime
+
+
 class Circle(object):
     # class object attributes
     pi = 3.14
+    today = datetime.date.today()
 
     def __init__(self, radius=1, perimeter=25):
         self.radius = radius
@@ -27,3 +31,4 @@ c.set_radius(50)
 print(c.get_radius())
 print(c.area())
 print(str(c.get_perimeter()) + ' this is a perimeter of the Circle')
+print(Circle.today)
